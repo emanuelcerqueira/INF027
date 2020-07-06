@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 int main(){	
-	int numero1, numero2, numero3, maior, segundoMaior;
+	int numero1, numero2, numero3, maior, segundoMaior, soma;
 
 	printf("NUMEROS 1, 2 e 3:\n");
 	scanf("%d %d %d", &numero1, &numero2, &numero3);	
@@ -32,8 +32,10 @@ int main(){
 		segundoMaior = numero2;	
 	}
 
+	soma = maior + segundoMaior;
+
 	printf("MAIOR NUMERO: %d", maior);
 	printf("\nSEGUNDO MAIOR NUMERO: %d", segundoMaior);
-
+	printf("\nSOMA: %d", soma);
 	return 0;
 }
