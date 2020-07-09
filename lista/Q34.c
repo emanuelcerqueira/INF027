@@ -21,9 +21,10 @@ int main(){
 	scanf("%f", &prestacoes);
 
 	valorMaximoEmprestimo = renda * 10;
+	valorMaximoPrestacao = renda * 0.3;
 	valorPrestacao = valorEmprestimo / prestacoes;
 
-	if ((valorEmprestimo <= valorMaximoEmprestimo) && (valorPrestacao <= (renda * 0.3)))
+	if ((valorEmprestimo <= valorMaximoEmprestimo) && (valorPrestacao <= valorMaximoPrestacao))
 		printf("EH POSSIVEL REALIZAR EMPRESTIMO");
 	else
 		printf("NAO EH POSSIVEL REALIZAR EMPRESTIMO");
