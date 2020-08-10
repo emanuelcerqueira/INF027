@@ -15,7 +15,7 @@ int main(){
 
 	aux = dividendo;
 
-	while ((aux - divisor) > 0) {
+	while ((aux - divisor) >= 0) {
 		aux -= divisor;
 		quociente++;
 	}
