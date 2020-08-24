@@ -4,22 +4,26 @@ usuário) termos, escreva um programa para calcular S para um número N
 */
 
 #include <stdio.h>
-int main(){	
+int main() {
 	
-	int numero, somaDivisores = 0;
+	int i;
+	int j;
+	int n;
+	float s;
+	float potencia;
 
-	printf("NUMERO INTEIRO:\n");
-	scanf("%d", &numero);
+	printf("N:\n");
+	scanf("%d", &n);
 
-
-	for (int i = 1; i <= (numero / 2); i++)
-		if (numero % i == 0)
-			somaDivisores += i;
-
-	if (numero == somaDivisores)
-		printf("%d EH UM NUMERO PERFEITO", numero);
-	else
-		printf("%d NAO EH UM NUMERO PERFEITO", numero);
+	for (i = 1; i <= n; i++) {
+	    potencia = i;
+		for (int j = 0; j < i-1; j++)
+		    potencia *= i;
+		    
+        s += 1 / potencia;
+	}
+	
+	printf("S = %f", s);
 	
 	return 0;
 }
