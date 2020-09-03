@@ -58,15 +58,15 @@ int main(){
 	for (i = 0; i < TAM; i++) {
 		qtdVidasAtual = 0;
 		
-        if (i != TAM-1) {
-    		for (j = i; j < TAM; j++) {
-    			qtdVidasAtual += salas[j];
+        	if (i != TAM-1) {
+    			for (j = i; j < TAM; j++) {
+    				qtdVidasAtual += salas[j];
     			
-    			if (qtdVidasAtual > maiorQtdVidas)
-    				maiorQtdVidas = qtdVidasAtual;    		
+    				if (qtdVidasAtual > maiorQtdVidas)
+    					maiorQtdVidas = qtdVidasAtual;    		
     				
-    		}
-        }
+    			}
+		}
 	}
 	printf("QUANTIDADE MAXIMA DE VIDAS QUE SERA POSSIVEL GANHAR: %d\n", maiorQtdVidas);
 
