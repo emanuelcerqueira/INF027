@@ -47,14 +47,12 @@ int main(){
 	int qtdVidasAtual;
 	int maiorQtdVidas = 0;
 
-	
 
 	for (i = 0; i < TAM; i++) {
 	    printf("QTD. VIDAS DA SALA %d:\n", i);
 	    scanf("%d", &salas[i]);
 	}
 		
-
 	for (i = 0; i < TAM; i++) {
 		qtdVidasAtual = 0;
 		
@@ -68,6 +66,7 @@ int main(){
     			}
 		}
 	}
+
 	printf("QUANTIDADE MAXIMA DE VIDAS QUE SERA POSSIVEL GANHAR: %d\n", maiorQtdVidas);
 
 	return 0;
