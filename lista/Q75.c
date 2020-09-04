@@ -5,12 +5,13 @@ método da bolha (bubble sort).
 #include <stdio.h> 
 #include <stdlib.h>
 
+#define TAM 15
 int main() {
 	
 	int i;
 	int j;
 	int aux;
-	int array[15];
+	int array[TAM];
 	
 	srand(time(NULL));
 	
@@ -22,8 +23,8 @@ int main() {
 		printf("%d, ", array[i]);
 
     
-	for (i = 0; i < 15; i++) {
-		for (j = 0; j < 15; j++) {
+	for (i = 1; i < TAM; i++) {
+		for (j = 0; j < TAM-1 - i; j++) {
 	   		if (array[j] > array[j+1]) {
 
 				aux = array[j];
