@@ -24,7 +24,7 @@ int main() {
 
     
 	for (i = 1; i < TAM; i++) {
-		for (j = 0; j < TAM-1 - i; j++) {
+		for (j = 0; j < TAM - i; j++) {
 	   		if (array[j] > array[j+1]) {
 
 				aux = array[j];
